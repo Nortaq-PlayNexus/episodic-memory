@@ -1,0 +1,19 @@
+[project]
+name = "episodic-memory"
+version = "0.1.0"
+description = "Episodic memory for AI agents - stores and retrieves experiences, not just facts"
+requires-python = ">=3.11"
+dependencies = [
+    "chromadb>=1.5.0",
+]
+
+[project.optional-dependencies]
+mcp = ["mcp>=1.0.0"]
+dev = ["pytest>=8.0.0", "ruff>=0.5.0"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100

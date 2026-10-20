@@ -1,0 +1,11 @@
+# Local environment
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+
+# Generated stores (regenerable; the durable JSONL log is an artefact of a run)
+data/chroma/
+data/retrieval_bench/chroma/
+data/retrieval_bench/episodes.jsonl
