@@ -1,0 +1,91 @@
+{
+  "experiment": "continuity_v2 retrieval through the episodic-memory store",
+  "date": "2026-10-22",
+  "seed": 20261022,
+  "embedding_model": "all-MiniLM-L6-v2 (384-dim, cosine) via ChromaDB ONNXMiniLM_L6_V2",
+  "store_size": 27,
+  "scenarios": 6,
+  "query_key": "query_specific",
+  "pair_size": 2,
+  "retrieved_pair_count": 6,
+  "retrieved_pair_rate": 1.0,
+  "by_category": {
+    "constraint_persistence": {
+      "scenarios": 2,
+      "retrieved_pair": 2
+    },
+    "commitment_preservation": {
+      "scenarios": 1,
+      "retrieved_pair": 1
+    },
+    "source_attribution": {
+      "scenarios": 1,
+      "retrieved_pair": 1
+    },
+    "rationale_reconstruction": {
+      "scenarios": 1,
+      "retrieved_pair": 1
+    },
+    "justified_revision": {
+      "scenarios": 1,
+      "retrieved_pair": 1
+    }
+  },
+  "failures": [],
+  "rows": [
+    {
+      "scenario_id": "V001",
+      "category": "constraint_persistence",
+      "query": "maximum memory allocation 512 MB per process for the billing service",
+      "retrieved_pair": true,
+      "target_in_top": true,
+      "decoy_in_top": true,
+      "target_rank": 2
+    },
+    {
+      "scenario_id": "V002",
+      "category": "commitment_preservation",
+      "query": "the system must verify file integrity for a restore operation",
+      "retrieved_pair": true,
+      "target_in_top": true,
+      "decoy_in_top": true,
+      "target_rank": 1
+    },
+    {
+      "scenario_id": "V003",
+      "category": "source_attribution",
+      "query": "the primary database reports 1200 rows",
+      "retrieved_pair": true,
+      "target_in_top": true,
+      "decoy_in_top": true,
+      "target_rank": 1
+    },
+    {
+      "scenario_id": "V004",
+      "category": "rationale_reconstruction",
+      "query": "rate limiting prevents cascade failures, threshold 750 req/min, for the API gateway",
+      "retrieved_pair": true,
+      "target_in_top": true,
+      "decoy_in_top": true,
+      "target_rank": 1
+    },
+    {
+      "scenario_id": "V005",
+      "category": "justified_revision",
+      "query": "approved deployment of v2.3 based on passing tests for the billing service",
+      "retrieved_pair": true,
+      "target_in_top": true,
+      "decoy_in_top": true,
+      "target_rank": 1
+    },
+    {
+      "scenario_id": "V006",
+      "category": "constraint_persistence",
+      "query": "maximum memory allocation 256 MB per process for the indexer",
+      "retrieved_pair": true,
+      "target_in_top": true,
+      "decoy_in_top": true,
+      "target_rank": 2
+    }
+  ]
+}

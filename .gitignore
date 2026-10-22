@@ -9,3 +9,5 @@ __pycache__/
 data/chroma/
 data/retrieval_bench/chroma/
 data/retrieval_bench/episodes.jsonl
+data/continuity_v2/chroma/
+data/continuity_v2/episodes.jsonl
